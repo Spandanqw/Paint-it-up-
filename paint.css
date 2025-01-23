@@ -1,0 +1,467 @@
+/*landing page*/
+#front {                                         
+    height:100vh;
+    width:100vw;
+    background-image:url("backgroundb&wbl.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*paint it up logo*/
+#logo1{                                        
+    height: 500px;
+    width:500px;
+    position: absolute;
+    top: 10vh;
+    left: 34vw;
+    z-index: 1;
+    margin: 0px;
+    padding: 0px;
+  
+}
+#logo1.logo_breathe{
+    animation: breathe 2s forwards infinite ease-in-out;
+}
+@keyframes breathe{
+    0%{
+       transform:  scale(1);
+    }
+    50%{
+        transform:scale(0.95);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+/*logo animation*/
+.logo_move{                                    
+    animation: lm 0.6s forwards;
+}  
+@keyframes lm{
+    from{
+          top:10vh;
+          left:30vw;
+          z-index: 1;
+          scale: 1;
+    }
+    to {
+        scale: 0.12;
+        top: -213px;
+        left:-200px;
+        z-index:15;
+    }
+}
+
+
+/*picasso text*/
+#picasso {                                      
+    position: relative;
+    height: 75px;
+    top:75vh;
+    left:-100vw;
+    animation: pslide 0.8s forwards;
+} 
+/*text animation*/
+@keyframes pslide{                  
+    from{
+        left:-100vw;
+    }
+    to{
+        left:30vw;
+    }
+}
+
+
+/*paint console*/
+#paint{                                             
+    position:relative;
+    
+}
+
+
+/*console slideup animation*/
+.show{                                               
+   animation: go_up 0.6s forwards; 
+}
+@keyframes go_up{
+    from{
+        top:100vh;
+    }
+    to{ 
+        top:0px;
+        position:absolute;
+        left:0px;
+    }
+}
+
+
+/*top bar*/
+#top_bar {                                              
+    background-color: rgb(77, 29, 29);
+    width : 100vw;
+    height :10vh;
+    margin:0;
+    display: flex;
+    flex-direction: row;
+}
+#hide_block{
+    background-color:rgb(77, 29, 29);
+    position: relative;
+    height: 10vh;
+    width:5vw;
+    z-index: 10;
+}
+
+/*draw your mona lisa*/
+#mona_lisa{
+    height: 65px;
+    width:300px;
+    position: relative;
+    top:5px;
+    left:-285px;
+    z-index: 5;
+}
+.mona_slide{
+    animation: slide 0.6s forwards 0.6s;
+}
+@keyframes slide{
+    from{
+        left:-20vw;
+    }
+    to{
+        left:0vw;
+    }
+}
+
+  /*canvas area*/
+#canvas_area {                                     
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*drawing canvas*/
+#canvas {                                             
+    background-color: white;
+    border-radius: 7px;
+    position:relative;
+    opacity:1;
+}
+
+
+/*save button*/
+#button {                                               
+    position: relative;
+    top:0px;
+    left:78vw;
+    height:4vh;
+    width:4vw;
+    border:2px solid black;
+    border-radius: 0 0 7px  7px;
+    border-top: 0px;
+    
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    background-image: url("bg2.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+/*drawing tools*/
+#tools_section {  
+    width:12vw;
+    height:65vh;    
+    position: relative;                                  
+    background-color: bisque;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius:0px 16px 16px 0px;
+    left:-12vw;
+   
+}
+.tool_go_left{
+    animation: go_left 0.6s forwards 0.6s;
+}
+@keyframes go_left{
+    from{
+        left:-12vw;
+    }
+    to{
+        left:0vw;
+    }
+}
+
+
+
+/*pencil,eraser,bucket class*/
+.pe{
+    border-radius: 4%;
+   
+}
+
+
+/*drawing shapes*/
+#shapes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: tan;
+    flex-direction: column;
+    width:8vw;
+    height:29vh;
+    
+    border-radius: 10px;
+}
+
+#line{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+  
+    border-radius: 50%;
+}
+#linei{
+    position: relative;
+    height:5vh;
+    width:2.5vw;
+    padding: 4px;
+}
+
+#circle{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+ 
+    border-radius: 50%;
+}
+
+#circlei{
+    position: relative;
+    height:5vh;
+    width:2.5vw;
+    padding: 4px;
+}
+#rectangle{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    
+    border-radius: 50%;
+}
+
+#rectanglei{
+    position: relative;
+    height:5vh;
+    width:2.5vw;
+    padding: 4px;
+}
+/*colors*/
+
+
+
+
+#pencil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#pencili{
+    position: relative;
+    height:6vh;
+    width:3vw;
+}
+
+#eraser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#eraseri{
+    position: relative;
+    height:6vh;
+    width:3vw;
+}
+
+#two_color{
+    width:6vw;
+    height:5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    background-color: tan;
+    border-radius:10px;
+}
+
+.selected_cols{
+    height: 22px;
+    width: 22px;
+    border: 2px solid white;
+    
+}
+
+#scol{
+    border-radius: 8px;
+   
+}
+#ucol{
+    background-color: white;
+    border-radius: 8px;
+    
+}
+
+#color{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#colori{
+    position: relative;
+    height:6vh;
+    width:3vw;
+}
+
+#image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#imagei{
+    position: relative;
+    height:6vh;
+    width:3vw;
+}
+
+
+   
+#tools_section2{
+       position:relative;
+       display:flex;
+       justify-content: space-evenly;
+       flex-direction: column;
+       align-items: center;
+       width:12vw;
+       height:65vh;
+       background-color: bisque;
+       border-radius:16px 0px 0px 16px;
+       right:-12vw;
+}
+.tool_go_right{
+    animation: go_right 0.6s forwards 0.6s;
+}
+@keyframes go_right{
+    from{
+        right:-12vw;
+    }
+    to{
+        right:0vw;
+    }
+}
+
+#color_options{
+    width:6vw;
+    height:29vh;
+    background-color: tan;
+    position: relative;
+    border-radius:10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.colors:nth-child(1){
+    background-color: black;
+}
+.colors:nth-child(2){
+    background-color: brown;
+}
+.colors:nth-child(3){
+    background-color: red;
+}
+.colors:nth-child(4){
+    background-color: orange;
+}
+.colors:nth-child(5){
+    background-color: yellow;
+}
+.colors:nth-child(6){
+    background-color: green;
+}
+.colors:nth-child(7){
+    background-color: purple;
+}
+.colors:nth-child(8){
+    background-color: blue;
+}
+.colors:nth-child(9){
+    background-color: pink;
+}
+.colors:nth-child(10){
+    background-color: white;
+}
+.colors{
+    height: 20px;
+    width: 20px;
+    border-radius:50%;
+    position: relative;
+    left: 0.8vw;
+    border: 1px solid white;
+    
+}
+
+
+
+#color_selector{
+    padding:1px;
+    content: linear-gradient(90deg,
+    red,  
+    orange,  
+    yellow, 
+    green,  
+    blue,   
+    indigo  );
+    border-radius: 6px;
+}
+.ho:hover{
+    background-color: tan;
+}
+.hoo{
+    background-color: tan;
+}
+#clear_canvas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+}
+#clear_canvasi{
+    position: relative;
+    height:6vh;
+    width:3vw;
+    border-radius: 50%;
+}
+
+
