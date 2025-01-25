@@ -1,3 +1,5 @@
+![Screenshot 2024-12-29 154752](https://github.com/user-attachments/assets/26986fc7-5ba9-4b7e-a693-3abd7dbeee85)
+
 Paint It Up! is an online web app which allows you to paint your imaginations but provides more colorful and fun experience compared to contemporaries.
 created using HTML, CSS and vanilla Javascript. This project is perfect for understanding Document Object Model and frontend eventflow in javascript.
 Interesting problems to solve are:-
